@@ -26,25 +26,21 @@ sumToN(-8)  // returns null
 //   }
 // }
 
-let total = 0;
-function sumToN(n) {
-  total += n;
-  if (n < 0) return null;
-// Base Case
 
-if (n === 0) return total;
- 
-
-
-  // Recursive Case
-return sumToN(n-1);
-
-
+const sumToN = n => {
+  if (n < 0) {
+    return null;
+  } else if (n === 0) {
+    return 0;
+  }
+  else {
+    return n + sumToN(n - 1)
+  }
 }
 
 
 
-console.log(sumToN(5)) // returns 15
+// console.log(sumToN(5)) // returns 15
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
