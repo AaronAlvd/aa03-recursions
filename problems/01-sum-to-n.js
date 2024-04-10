@@ -12,19 +12,37 @@ sumToN(-8)  // returns null
 ***********************************************************************/
 
 
+// function sumToN(n) {
+//   let array = [];
+//   if (n < 0) return null;
+  
+  
+  
+//   else {
+//     array.push(n - 1)
+
+//   return sumToN(n)
+
+//   }
+// }
+
+let total = 0;
 function sumToN(n) {
-  let array = [];
-
+  total += n;
   if (n < 0) return null;
-  else {
-    array.push(n - 1)
+// Base Case
 
-  return sumToN(n)
+if (n === 0) return total;
+ 
 
-  }
-    
+
+  // Recursive Case
+return sumToN(n-1);
+
 
 }
+
+
 
 console.log(sumToN(5)) // returns 15
 
