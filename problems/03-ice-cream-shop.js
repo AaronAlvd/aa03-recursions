@@ -11,6 +11,15 @@ iceCreamShop(['cookies n cream', 'blue moon', 'superman', 'honey lavender', 'sea
 iceCreamShop(['moose tracks'], 'moose tracks'); // true
 iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
+// Andrew's Solution:
+// function iceCreamShop(flavors, favorite) {
+// if (flavors[0] === favorite) {
+//   return true;
+// }
+// else {
+// return iceCreamShop(flavors.slice(1));
+// }
+// }
 
 
 function iceCreamShop(flavors, favorite) {
